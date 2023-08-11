@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import "./salarial.css"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function ing() {
 
@@ -33,8 +35,8 @@ function ing() {
   };
 
   return (
-    <div className="container">
-      <label htmlFor="numeroInput">Ingresa el salario: </label>
+    <div className="container mt-5">
+      <label htmlFor="numeroInput">Ingresa el salario: </label><br />
       <input
         type="number"
         id="salario"
@@ -42,7 +44,7 @@ function ing() {
         onChange={transferirsalario}
       />
       <br />
-      <label htmlFor="numeroInput">Ingresa el aumento: </label>
+      <label htmlFor="numeroInput">Ingresa el aumento: </label><br />
       <input
         type="number"
         id="aumento"
@@ -50,7 +52,7 @@ function ing() {
         onChange={transferiraumento}
       />
       <br />
-      <label htmlFor="numeroInput">Ingresa el descuento: </label>
+      <label htmlFor="numeroInput">Ingresa el descuento: </label><br />
       <input
         type="number"
         id="descuento"

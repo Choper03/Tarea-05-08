@@ -5,17 +5,20 @@ import Navbar from './contents/navbar.jsx';
 import Salarial from "./contents/Salarial.jsx"
 import Home from "./contents/Home.jsx"
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 function App() {
 
   return (
+    <div className='navbar-1'>
     <Router>
       <div className="App">
         <header>
           <Navbar />
         </header>
         <main>
-          <Routes> {/* Usamos "Routes" en lugar de "Switch" */}
-            <Route path="/" element={<Home />} /> {/* Usamos "element" en lugar de "component" */}
+          <Routes> {}
+            <Route path="/" element={<Home />} /> {}
             <Route path="/salarios" element={<Salarial />} />
           </Routes>
         </main>
@@ -24,6 +27,7 @@ function App() {
         </footer>
       </div>
     </Router>
+    </div>
   )
 }
 
